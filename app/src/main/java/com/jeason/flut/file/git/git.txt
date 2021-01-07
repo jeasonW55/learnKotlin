@@ -3,3 +3,4 @@
 #git 添加和提交 - git add .
                 git commit -m "提交内容说明" 或者 git commit -m '提交内容说明'
 #git 查看当前工作树状态 - git status
+#git 拉取远程分支合并 - git pull origin 分支名 (如果出现说明，摁Ctrl+O即可退出，其他操作，摁Ctrl和对应的快捷键就可以了)
