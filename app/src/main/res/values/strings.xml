@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Flut</string>
+    <string name="origin">原始数据：</string>
+    <string name="tv_change">改变数据：</string>
+</resources>
