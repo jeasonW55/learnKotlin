@@ -1,0 +1,5 @@
+#git 关联远程仓库 - git remote add origin https://github.com/jeasonW55/learnKotlin.git
+#git 切换并且创建分支 - git checkout -b branch_name
+#git 添加和提交 - git add .
+                git commit -m "提交内容说明" 或者 git commit -m '提交内容说明'
+#git 查看当前工作树状态 - git status
