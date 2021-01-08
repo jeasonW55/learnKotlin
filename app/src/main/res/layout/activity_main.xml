@@ -17,6 +17,7 @@
             android:text="@string/origin"
             />
         <TextView
+            android:textColor="@color/black"
             style="@style/tv_style"
             android:id="@+id/tv_origin_1" />
         <TextView
@@ -25,13 +26,15 @@
             android:id="@+id/tv_origin_2"
             style="@style/tv_style"/>
         <TextView
+            android:textColor="@color/black"
             style="@style/tv_style"
             android:id="@+id/tv_origin_3" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
+        android:gravity="bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <Button
             android:id="@+id/transfer_int"
             android:text="Transfer_Int"

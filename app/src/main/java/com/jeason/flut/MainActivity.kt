@@ -49,7 +49,9 @@ class MainActivity : AppCompatActivity() {
             tv_origin_3.text = string
         }
 
-        tv_origin_3.text = char.toString()
+        transfer_char.setOnClickListener {
+            tv_origin_3.text = char.toString()
+        }
     }
 
 
