@@ -15,6 +15,12 @@
         <item name="android:layout_width">0dp</item>
     </style>
 
+    <style name="bt_trans">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
     <color name="myColor">#DB4035</color>
     <color name="green">#84FAEF</color>
 </resources>

@@ -1,0 +1,18 @@
+# Kotlin 声明数组的时候与Java几乎完全不同
+
+  Kotlin 声明数组并初始化： var int_array: IntArray = intArrayOf(1, 2, 3)
+                         var long_array: LongArray = longArrayOf(1, 2, 3)
+                         var float_array: FloatArray = floatArrayOf(1.0f, 2.0f, 3.0f)
+                         var double_array: DoubleArray = doubleArrayOf(1.0, 2.0, 3.0)
+                         var char_array: CharArray = charArrayOf('a', 'b', 'c')
+                         var boolean_array: BooleanArray = booleanArrayOf(true, true, false)
+                         String类型数组不可以通过此种方式声明并且初始化
+
+  对比Java声明数组并初始化  String[] strArray = new String[length]
+                         int[] intArray = new int[length]
+                         ...
+
+  # Kotlin 另外一种声明数组并初始化的方式 类似于 Java的 ArrayList
+                        var int_array: Array<Int> = arrayOf(1, 2, 3)
+                        var string_array: Array<String> = arrayOf("Hello", "Hi", "Seven")
+                        var boolean_array: Array<Boolean> = arrayOf(true, false)
