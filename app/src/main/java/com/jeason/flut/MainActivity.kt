@@ -2,11 +2,9 @@ package com.jeason.flut
 
 import android.content.Context
 import kotlinx.android.synthetic.main.activity_main.*
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import org.jetbrains.anko.longToast
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,24 +14,48 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        initView()
+
+        initListener()
+
+    }
+
+    private fun initListener() {
+        val int:Int = origin.toInt()
+        val boolean:Boolean = origin.isNaN()
+        val long: Long = origin.toLong()
+        val char: Char = origin.toChar()
+        val string: String = origin.toString()
+        val double: Double = origin.toDouble()
+
+
+        transfer_int.setOnClickListener {
+            tv_origin_3.text = int.toString()
+        }
+
+        transfer_long.setOnClickListener {
+            tv_origin_3.text = long.toString()
+        }
+
+        transfer_boolean.setOnClickListener {
+            tv_origin_3.text = boolean.toString()
+        }
+
+        transfer_double.setOnClickListener {
+            tv_origin_3.text = double.toString()
+        }
+
+        transfer_string.setOnClickListener {
+            tv_origin_3.text = string
+        }
+
+        tv_origin_3.text = char.toString()
+    }
+
+
+
+    private fun initView() {
         tv_origin_1.text = origin.toString()
-
-        hello.text = "China no.1"
-        hello.setOnClickListener{
-            hello()
-            val intent: Intent = Intent(this, Class.forName("com.jeason.flut.Main2Activity"))
-            startActivity(intent)
-        }
-
-        hello.setOnLongClickListener {
-            hello.text = "您长摁了一小会"
-            lonToast("China always no.1")
-            return@setOnLongClickListener  true
-        }
-
-        transfer.setOnClickListener {
-            tv_origin_3.text = origin.toInt().toString()
-        }
     }
 
 }
